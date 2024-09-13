@@ -1,11 +1,12 @@
 #pragma once
 
-#include "TileMapScene.hh"
 #include "psyqo/fragments.hh"
 #include "psyqo/scene.hh"
 #include "psyqo/font.hh"
 #include "psyqo/simplepad.hh"
 #include "psyqo/primitives.hh"
+#include "Demo3DScene.hh"
+#include "TileMapScene.hh"
 
 class TitleScene final : public psyqo::Scene {
     void start(Scene::StartReason reason) override;
@@ -20,5 +21,6 @@ class TitleScene final : public psyqo::Scene {
     psyqo::Prim::Rectangle selection;
     uint8_t selected = 0;
     TileMapScene tile_map_scene;
+    Demo3DScene demo_3d_scene;
 
 };

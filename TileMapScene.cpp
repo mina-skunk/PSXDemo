@@ -15,7 +15,7 @@ void TileMapScene::start(Scene::StartReason reason) {
 
 void TileMapScene::frame() {
     gpu().clear({{ .r=0x23, .g=0x26, .b=0x34 }});
-    font->print(gpu(), "title", {{.x = 16, .y = 64}}, {{.r=255, .g=255, .b=255}});
+    font->print(gpu(), "Tiles", {{.x = 16, .y = 64}}, {{.r=255, .g=255, .b=255}});
 
     gpu().sendPrimitive(tex_page);
     // gpu().sendPrimitive(sprite);

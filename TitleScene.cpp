@@ -38,10 +38,16 @@ void TitleScene::start(Scene::StartReason reason) {
                 selected++;
             }
             if (event.button == psyqo::SimplePad::Cross || event.button == psyqo::SimplePad::Start) {
-                // TODO handle more options
-                tile_map_scene.font = font;
-                // tile_map_scene.input = input;
-                pushScene(&tile_map_scene);
+                if (selected == 0) {
+                    tile_map_scene.font = font;
+                    // tile_map_scene.input = input;
+                    pushScene(&tile_map_scene);
+                }
+                if (selected == 1) {
+                    demo_3d_scene.font = font;
+                    demo_3d_scene.input = input;
+                    pushScene(&demo_3d_scene);
+                }
             }
         }
     });
@@ -58,7 +64,7 @@ void TitleScene::frame() {
 
 
     font->print(gpu(), "1. Tile Map", {{.x = 32, .y = 96}}, {{.r=255, .g=255, .b=255}});
-    font->print(gpu(), "2. TODO", {{.x = 32, .y = 128}}, {{.r=255, .g=255, .b=255}});
+    font->print(gpu(), "2. Demo 3D", {{.x = 32, .y = 128}}, {{.r=255, .g=255, .b=255}});
     font->print(gpu(), "3. TODO", {{.x = 32, .y = 160}}, {{.r=255, .g=255, .b=255}});
 }
 
