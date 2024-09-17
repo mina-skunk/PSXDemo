@@ -1,6 +1,6 @@
 #include "psyqo/fixed-point.hh"
 #include "Demo3DScene.hh"
-#include "Render3D.hh"
+#include "Graphics/Render3D.hh"
 
 using namespace psyqo::fixed_point_literals;
 

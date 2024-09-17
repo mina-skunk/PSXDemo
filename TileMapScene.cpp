@@ -1,6 +1,6 @@
 #include "TileMapScene.hh"
 #include "tileset.h"
-#include "TileMap.hh"
+#include "Graphics/TileMap.hh"
 
 void TileMapScene::start(Scene::StartReason reason) {
     psyqo::Rect region = {.pos = {{.x = 512, .y = 0}}, .size = {{.w = tileset_tex_WIDTH, .h = tileset_tex_HEIGHT}}};

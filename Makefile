@@ -9,13 +9,13 @@ main.cpp \
 GameApp.cpp \
 SplashScene.cpp \
 TitleScene.cpp \
-TileMap.cpp \
+Graphics/TileMap.cpp \
 TileMapScene.cpp \
-Camera2D.cpp \
+Graphics/Camera2D.cpp \
 Demo3DScene.cpp \
-Render3D.cpp \
-Camera3D.cpp \
-Sound.cpp \
+Graphics/Render3D.cpp \
+Graphics/Camera3D.cpp \
+System/Sound.cpp \
 System/SimpleCDAudio.cpp
 
 # Setting the minimum version of the C++. C++-20 is the minimum required version by PSYQo.

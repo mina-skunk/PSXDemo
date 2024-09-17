@@ -3,8 +3,8 @@
 #include "psyqo/scene.hh"
 #include "psyqo/font.hh"
 #include "psyqo/simplepad.hh"
-#include "Camera3D.hh"
-#include "Plane.hh"
+#include "Graphics/Camera3D.hh"
+#include "Graphics/Plane.hh"
 
 class Demo3DScene final : public psyqo::Scene {
     void start(Scene::StartReason reason) override;
