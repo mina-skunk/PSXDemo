@@ -16,7 +16,7 @@ Demo3DScene.cpp \
 Render3D.cpp \
 Camera3D.cpp \
 Sound.cpp \
-SimpleCDAudio.cpp
+System/SimpleCDAudio.cpp
 
 # Setting the minimum version of the C++. C++-20 is the minimum required version by PSYQo.
 CXXFLAGS = -std=c++20
